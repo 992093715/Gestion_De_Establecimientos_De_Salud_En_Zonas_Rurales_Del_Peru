@@ -154,7 +154,7 @@ if __name__ == "__main__":
 
     """
     aqui ordenamos al sistema buscar con filter y lambda a cualquier paciente que tenga 
-    la palabra 'Ana'
+    la palabra 'Ana'.
     """
     encontrados = sistema.buscar_paciente_por_nombre("Ana")
     print(f"Pacientes encontrados: {len(encontrados)}")
@@ -172,7 +172,7 @@ if __name__ == "__main__":
     print("\n--- REPORTE GENERAL ---")
     reporte = sistema.generar_reporte_pacientes()
     """
-    al final  el usuario o el medico le hechan un vistazo al reporte
+    al final  el usuario o el medico le hechan un vistazo al reporte.
     """
     for linea in reporte:
         print(linea)
