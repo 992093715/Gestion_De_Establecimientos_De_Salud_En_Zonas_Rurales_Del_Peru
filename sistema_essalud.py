@@ -8,7 +8,7 @@ import hashlib
 """
 creamos la clase paciente aplicando POO basica, utilizamos atributos privados
 (con doble guion) y getters tradicionales para proteger la informacion,
-y sea dificil de modificarse.
+y sea dificil de modificarse. 
 """
 class Paciente:
     def __init__(self, id_paciente, nombre, dni):
