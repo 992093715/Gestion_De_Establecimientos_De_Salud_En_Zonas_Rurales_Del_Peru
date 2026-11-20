@@ -17,7 +17,7 @@ class Paciente:
         """
         usamos haslib.sha256 para hashear el DNI y cumplir con la lay N.° 29733
         .encode() pasa el texto a bytes y .hexdigest() lo vuelve un codigo seguro
-        de letras y numeros, evitando guardar datos muy sensibles en texto plano
+        de letras y numeros, evitando guardar datos muy sensibles en texto plano 
         (en pantalla o en la base de datos) y se protege la privacidad.
         """ 
         self.__dni_hash = hashlib.sha256(dni.encode()).hexdigest()
