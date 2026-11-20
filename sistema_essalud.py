@@ -174,5 +174,55 @@ if __name__ == "__main__":
     """
     al final  el usuario o el medico le hechan un vistazo al reporte.
     """
+    #para que sea mas interactivo, mostramos el encabezamos con un buble infinito para mantener el menu 
+    #activo hasta que el usuario quiera salir del programa. y tambien ver si que se ejecuta el programa.
+    
+    print("\n--- MENÚ INTERACTIVO DEL SISTEMA ---")
+    while True:
+        print("\n1. Registrar nuevo paciente")
+        print("2. Buscar paciente por nombre")
+        print("3. Ver reporte general")
+        print("4. Salir")
+        
+        #capturamos la opcion que el usuario va a ingresar por teclado
+        
+        opcion = input("Elige una opción (1-4): ")
+        
+        #si elije la opcion 1, se le solicita sus datos ,para un nuevo objeto paciente y 
+        #registrarlo
+        if opcion == "1":
+            id_p = input("Ingrese ID del paciente (ej. P003): ")
+            nombre = input("Ingrese nombre completo: ")
+            dni = input("Ingrese DNI (8 dígitos): ")
+            nuevo_p = Paciente(id_p, nombre, dni)
+            sistema.registrar_paciente(nuevo_p)
+            print("¡Paciente registrado y DNI protegido con éxito!")
+
+         #si elije la opcion 2, se usa el filter y el lambda para buscar coincidencias parciales
+         #por nombres
+        elif opcion == "2":
+            criterio = input("Ingrese el nombre a buscar: ")
+            encontrados = sistema.buscar_paciente_por_nombre(criterio)
+            print(f"Pacientes encontrados: {len(encontrados)}")
+            for p in encontrados:
+                print(f"-> {p.get_nombre()} | DNI Protegido: {p.get_dni_hash()[:12]}...")
+
+        #si elije la opcion 3, se aplica el map para generar y mostrar el reporte general
+        #actualizado
+                
+        elif opcion == "3":
+            print("\n--- REPORTE GENERAL ACTUALIZADO ---")
+            reporte = sistema.generar_reporte_pacientes()
+            for linea in reporte:
+                print(linea)
+
+        #si elije la opcion 4, se rompre el bucle con un break para salir del programa de forma 
+        # segura        
+        elif opcion == "4":
+            print("Saliendo del sistema. ¡Hasta luego!")
+            break
+        #si ingresa cualquier otra cosa, se muestra un mensaje de advertencia
+        else:
+            print("Opción no válida. Intente de nuevo.")
     for linea in reporte:
         print(linea)
