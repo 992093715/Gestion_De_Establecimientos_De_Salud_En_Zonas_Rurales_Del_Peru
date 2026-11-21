@@ -1,6 +1,6 @@
-# EsSaludManager
+# GestionEsSalud
 
-**EsSaludManager** es una aplicación de escritorio desarrollada en Phyton 3.x orientada a resolver las ineficiencias administrativas, la saturación de ventanillas y la pérdida de citas en el **Policlínico EsSalud "Juan José Rodríguez Lazo"** (Chorrillos, Lima).
+**GestionEsSalud** es una aplicación de escritorio desarrollada en Phyton 3.x orientada a resolver las ineficiencias administrativas, la saturación de ventanillas y la pérdida de citas en el **Policlínico EsSalud "Juan José Rodríguez Lazo"** (Chorrillos, Lima).
 
 El proyecto adopta un enfoque de diseño multiparadigma (Programación Orientada a Objetos, Programación Funcional y Programación Orientada a Eventos) para garantizar una ejecución fluida en estaciones de trabajo de bajos recursos de hardware (RAM 4 GB) y en entornos sin conectividad continua (*offline-first*).
 
