@@ -16,7 +16,7 @@ El proyecto adopta un enfoque de diseño multiparadigma (Programación Orientada
 Con Python instalado, abre una terminal y ejecuta:
 
 ```bash
-python spike_viabilidad.py
+python test_spike_viabilidad.py
 ```
 
-En Windows también puedes utilizar `py spike_viabilidad.py`.
+En Windows también puedes utilizar `py test_spike_viabilidad.py`.

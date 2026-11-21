@@ -1,0 +1,2 @@
+# El proyecto utiliza bibliotecas estándar de Python:
+# tkinter, sqlite3, hashlib, pathlib.
