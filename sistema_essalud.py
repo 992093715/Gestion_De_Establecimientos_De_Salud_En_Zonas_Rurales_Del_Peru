@@ -90,11 +90,11 @@ class CitaMedica:
 
 
 """
-la clase EsSaludManagerSistema se encarga de administrar las colecciones de
+la clase GestionEsSaludSistema se encarga de administrar las colecciones de
 datos ( lista de pacientes y citas) aplicando la programacion funcional.
 el append
 """
-class EsSaludManagerSistema:
+class GestionEsSaludSistema:
     def __init__(self):
         self.lista_pacientes = []
         self.lista_citas = []
@@ -141,7 +141,7 @@ if __name__ == "__main__":
     esto es como encender el programa para que administre las listas vacias
     de pacientes y citas.
     """
-    sistema = EsSaludManagerSistema()
+    sistema = GestionEsSaludSistema()
 
     """
     se crea registros de pacientes de prueba
