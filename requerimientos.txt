@@ -1,2 +1,9 @@
-# El proyecto utiliza bibliotecas estándar de Python:
-# tkinter, sqlite3, hashlib, pathlib.
+# Dependencias de GestionEsSalud
+# Nota: tkinter, sqlite3 y hashlib vienen integrados en la librería estándar de Python 3.x.
+
+# Pruebas unitarias automatizadas (Sección 1.5 EF)
+pytest>=7.4.0
+pytest-cov>=4.1.0
+
+# Calidad de código y estilo PEP 8 (Opcional)
+flake8>=6.1.0
