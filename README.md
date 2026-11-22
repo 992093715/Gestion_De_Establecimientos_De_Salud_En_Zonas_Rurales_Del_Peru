@@ -124,12 +124,12 @@ data/scripts/create_tables.sql
 La base de datos local se almacena en:
 
 ```bash
-data/esalud.db
+data/gestion_essalud.db
 ```
 
 El módulo de base de datos se encarga de inicializar la base de datos y ejecutar el script de creación de tablas cuando corresponde.
 
-**Nota:** el archivo esalud.db es una base de datos local y no necesita incluirse en el repositorio. La estructura de las tablas se conserva en el archivo SQL para que pueda generarse nuevamente en cada instalación.
+**Nota:** el archivo gestion_essalud.db es una base de datos local y no necesita incluirse en el repositorio. La estructura de las tablas se conserva en el archivo SQL para que pueda generarse nuevamente en cada instalación.
 
 ## Ejecución del script de viabilidad (Spike Técnico)
 
