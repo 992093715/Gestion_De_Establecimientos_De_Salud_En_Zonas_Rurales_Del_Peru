@@ -147,7 +147,8 @@ En Windows también puedes utilizar:
 py -m tests.test_spike_viabilidad
 ```
 
-## Grupo 4 y distribución
+## Distribución del equipo
+
 * **Aragon Sanchez, Samuel Aaron**
 
 Rol: Analista de Pruebas y Calidad de Software
