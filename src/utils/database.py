@@ -3,7 +3,7 @@ from pathlib import Path
 
 RUTA_BASE = Path(__file__).resolve().parents[2]
 RUTA_DATA = RUTA_BASE / "data"
-RUTA_DB = RUTA_DATA / "esalud.db"
+RUTA_DB = RUTA_DATA / "gestion_essalud.db"
 
 _conexion = None
 
@@ -15,6 +15,8 @@ def obtener_conexion():
 
         _conexion = sqlite3.connect(RUTA_DB)
         _conexion.row_factory = sqlite3.Row
+
+        _conexion.execute("PRAGMA foreign_keys = ON")
 
         inicializar_base_datos()
 
