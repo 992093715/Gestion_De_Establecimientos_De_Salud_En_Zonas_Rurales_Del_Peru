@@ -3,9 +3,10 @@ from tkinter import messagebox
 from src.servicios.paciente_servicio import PacienteServicio
 
 class VentanaPacientes:
-    def __init__(self, ventana):
+    def __init__(self, ventana, usuario):
         self.ventana = ventana
         self.servicio = PacienteServicio()
+        self.usuario = usuario
 
         self.ventana.title("GestiónEsSalud - Gestión de pacientes")
         self.ventana.geometry("650x500")
@@ -65,7 +66,8 @@ class VentanaPacientes:
             self.servicio.registrar_paciente(
                 self.id_paciente.get(),
                 self.nombre.get(),
-                self.dni.get()
+                self.dni.get(),
+                self.usuario
             )
 
             messagebox.showinfo(
@@ -85,7 +87,8 @@ class VentanaPacientes:
     def buscar(self):
         try:
             pacientes = self.servicio.buscar_paciente_por_nombre(
-                self.criterio.get()
+                self.criterio.get(),
+                self.usuario
             )
 
             self.resultados.delete(0, tk.END)
@@ -102,7 +105,7 @@ class VentanaPacientes:
             messagebox.showerror("Error", str(error))
 
     def mostrar_todos(self):
-        pacientes = self.servicio.obtener_pacientes()
+        pacientes = self.servicio.obtener_pacientes(self.usuario)
 
         self.resultados.delete(0, tk.END)
 
