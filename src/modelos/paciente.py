@@ -40,4 +40,6 @@ class Paciente:
         Los registros persistentes se agregan desde HistorialServicio.
         """
 
-        self.__historial.append(nota.strip())
+        self.__historial._agregar_nota_compatibilidad(
+            nota.strip()
+        )

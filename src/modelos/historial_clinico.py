@@ -36,12 +36,12 @@ class HistorialClinico:
         return registro.copy()
     
     def _agregar_nota_compatibilidad(self, nota):
-        self.__registros.append({
+        registro = {
             "fecha": None,
             "diagnostico": nota,
             "observaciones": "",
             "id_usuario": None
-        })
+        }
 
         self.__registros.append(registro)
         return registro.copy()
