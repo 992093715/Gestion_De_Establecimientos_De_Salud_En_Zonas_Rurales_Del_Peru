@@ -77,6 +77,12 @@ En Windows CMD:
 .venv\Scripts\activate.bat
 ```
 
+En caso falle, vuelva a intentar luego de ejecutar:
+
+```bash
+Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass
+```
+
 **5. Instalar las dependencias**
 
 Con el entorno virtual activado, ejecuta:
