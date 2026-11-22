@@ -149,17 +149,31 @@ py -m tests.test_spike_viabilidad
 
 ## Grupo 4 y distribución
 * **Aragon Sanchez, Samuel Aaron**
+
 Rol: Analista de Pruebas y Calidad de Software
-Descripción de tarea: Ejecución de pruebas del módulo: registro de pacientes, validación de citas, cancelaciones, consultas y control de inventario
+
+Descripción de tarea: Ejecución de pruebas del módulo: registro de pacientes, validación de citas, cancelaciones, consultas y control de inventario.
+
 * **Castillo Ramos, Fernanda Lucia**
+
 Rol: Analista de Requerimientos y Contexto, Analista de Software y Arquitectura, Desarrolladora de Módulos Operativos
-Descripción de tarea: Definición del contexto real de EsSalud, 6 requerimientos, 4 restricciones y 3 criterios de éxito. Revisión de los paradigmas (POO, Funcional, Eventos) y Justificación de selección multiparadigma. Integración de funciones de orden superior, validaciones, manejo de excepciones y medidas de protección de datos personales. Integración final, revisión de calidad del código, actualización del repositorio GitHub y preparación de la documentación.
+
+Descripción de tarea: Definición del contexto de EsSalud, requerimientos y restricciones; selección del enfoque multiparadigma; integración de validaciones, excepciones y protección de datos; y revisión final del repositorio.
+
 * **Choqque Santiago, Jeremy Matt**
+
 Rol: Desarrollador de Módulos Internos y Protección de Datos
+
 Descripción de tarea: Implementación de las clases principales: Paciente, CitaMedica, HistorialClinico, Medicamento, Usuario y Rol.
+
 * **Gamboa Mori, Carlos Bryan**
+
 Rol: Diseñador UML y Modelado de Dominio
+
 Descripción de tarea: Diseño de la arquitectura modular y elaboración del diagrama de clases UML.
+
 * **Olavarria Ccora, Fernando Alonzo**
+
 Rol: Redactor de Conclusiones y Aspectos Éticos
+
 Descripción de tarea: Redacción de la Sección 1.6: síntesis de decisiones de diseño, limitaciones técnicas, recomendaciones y reflexión ética.
