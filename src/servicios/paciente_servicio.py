@@ -33,7 +33,7 @@ class PacienteServicio:
 
         return self.repositorio.buscar_por_nombre(criterio)
 
-    def obtener_pacientes(self):
+    def obtener_pacientes(self, usuario):
         if not usuario.tiene_permiso("consultar_paciente"):
             raise PermissionError(
                 "No tiene permiso para consultar pacientes."
