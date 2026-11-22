@@ -184,3 +184,15 @@ Descripción de tarea: Diseño de la arquitectura modular y elaboración del dia
 Rol: Redactor de Conclusiones y Aspectos Éticos
 
 Descripción de tarea: Redacción de la Sección 1.6: síntesis de decisiones de diseño, limitaciones técnicas, recomendaciones y reflexión ética.
+
+## Cuenta de demostración
+
+Al ejecutar el programa por primera vez, el sistema crea automáticamente una cuenta de administrador de demostración si todavía no existe.
+
+**Credenciales:**
+
+- Usuario: `admin_demo`
+- Contraseña: `GestionEsSalud2026!`
+- Rol: Administrador
+
+La cuenta está destinada exclusivamente a pruebas y demostraciones del funcionamiento de GestionEsSalud.
