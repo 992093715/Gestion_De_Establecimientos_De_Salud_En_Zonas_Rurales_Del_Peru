@@ -1,4 +1,4 @@
-class CitaMedica:
+class CitaMedica: 
     """
     representa un cita medica dentro del sistema.
     Gestiona la informacion importante y permite controlar si la cita sigue activa o fue cancelada
