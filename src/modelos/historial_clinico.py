@@ -1,6 +1,6 @@
 class HistorialClinico:
     """
-    Aqui se Administra el historial médico de un paciente utilizando una lista de diccionarios
+    Aqui se Administra el historial médico de un paciente utilizando una lista de diccionarios 
     para guardar los diferentes registros y diagnosticos.
     """
 
