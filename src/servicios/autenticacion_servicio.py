@@ -10,6 +10,7 @@ from src.utils.seguridad import (
 
 class AutenticacionServicio:
 
+    # Instancia repositorios e inicializa los roles base del sistema al crear el servicio.
     def __init__(self):
         self.usuarios = UsuarioRepositorio()
         self.roles = RolRepositorio()
@@ -28,7 +29,7 @@ class AutenticacionServicio:
             raise ValueError("El nombre de usuario ya existe.")
 
         rol = self.roles.buscar_por_nombre(nombre_rol)
-
+# Genera UUID, hashea la contraseña y persiste el nuevo objeto Usuario.
         if rol is None:
             raise ValueError("El rol indicado no existe.")
 
@@ -38,7 +39,7 @@ class AutenticacionServicio:
             generar_hash_contrasena(contrasena),
             rol
         )
-
+# Verifica existencia, estado activo, hash de contraseña y rol válido para autenticar.
         self.usuarios.registrar(usuario)
         return usuario
 
@@ -54,10 +55,11 @@ class AutenticacionServicio:
         if not fila["activo"]:
             return None
 
+        # Reconstruye y retorna el modelo Usuario con su rol y estado booleano. 
         if not verificar_contrasena(
             contrasena,
             fila["contraseña_hash"]
-        ):
+        ):        
             return None
 
         rol = self.roles.buscar_por_id(fila["id_rol"])
